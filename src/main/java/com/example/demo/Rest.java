@@ -10,7 +10,7 @@ public class Rest {
 
     @GetMapping("/hello")
     public String hello() {
-        return "hello world2 !";
+        return "hello world3 !";
     }
 
 }
