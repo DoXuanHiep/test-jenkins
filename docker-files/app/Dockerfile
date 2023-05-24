@@ -9,5 +9,5 @@ LABEL "Author"="HIEP"
 VOLUME /tmp/webapps
 WORKDIR /tmp/webapps
 
-CCOPY --from=BUILD_IMAGE test-jenkins/target/*.jar /tmp/webapps/app.jar
+COPY --from=BUILD_IMAGE test-jenkins/target/*.jar /tmp/webapps/app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
